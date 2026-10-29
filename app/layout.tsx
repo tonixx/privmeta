@@ -154,6 +154,11 @@ export default function RootLayout({
         />
         <meta name="application-name" content="PrivMeta" />
         <meta name="theme-color" content="#ffffff" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5595808001740123"
+          crossOrigin="anonymous"
+        />
         {process.env.NEXT_PUBLIC_CF_BEACON_TOKEN && (
           <Script
             defer
