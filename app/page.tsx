@@ -17,7 +17,6 @@ import JSZip from "jszip";
 import ClearAllButton from "@/components/ClearAllButton";
 import ShareFunctions from "@/components/ShareFunctions";
 import Hero from "@/components/Hero";
-import { recordSuccessfulClean, SUPPORT_URL, suppressSupportPrompts } from "@/utils/supportPrompts";
 
 type ErrorType =
   | "file_count"
@@ -92,26 +91,7 @@ export default function Home() {
   const [processing, setProcessing] = useState<boolean>(false);
 
   const showSuccessfulDownloadToast = () => {
-    const supportPrompt = recordSuccessfulClean();
-
-    if (!supportPrompt) {
-      toast.success("Download ready");
-      return;
-    }
-
-    toast.success("Download ready", {
-      id: "support-bmc",
-      description: supportPrompt.description,
-      duration: 10000,
-      dismissible: true,
-      action: {
-        label: "Support",
-        onClick: () => {
-          suppressSupportPrompts();
-          window.open(SUPPORT_URL, "_blank", "noopener,noreferrer");
-        },
-      },
-    });
+    toast.success("Download ready");
   };
 
   const handleFilesAccepted = (newFiles: File[]) => {
