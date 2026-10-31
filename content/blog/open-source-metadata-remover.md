@@ -14,7 +14,7 @@ PrivMeta is a free, open-source metadata remover whose file-cleaning path runs i
 
 Open source means the source code is publicly available. Anyone can read it, inspect the intended behaviour, run the tests, and build it independently. For a privacy tool that handles sensitive files, that evidence matters.
 
-PrivMeta's source code is [on GitHub](https://github.com/DScaife/privmeta/tree/master). You, or a developer you trust, can audit the cleaning path, run its regression suite, and self-host a reviewed build. A hosted deployment still requires trust that the served build matches the published source.
+PrivMeta's source code is [on GitHub](https://github.com/tonixx/privmeta). You, or a developer you trust, can audit the cleaning path, run its regression suite, and self-host a reviewed build. A hosted deployment still requires trust that the served build matches the published source.
 
 ## Three Things You Can Verify in the Code
 
@@ -24,7 +24,7 @@ PrivMeta processes file bytes using JavaScript running directly in your browser 
 
 **2. Metadata is actually removed**
 
-Different file types need different approaches. For images, PrivMeta removes targeted EXIF, IPTC, XMP and comment structures. For DOCX files, it removes `docProps/` and anonymises author, account and revision-session identities throughout Word XML. Audio and video use hand-written format parsers for MP4/MOV/M4A, Matroska, MP3/AAC tags, FLAC and WAV. The code and exact [coverage limitations](https://github.com/DScaife/privmeta/blob/master/docs/PRIVACY_AND_FORMAT_COVERAGE.md) are readable on GitHub.
+Different file types need different approaches. For images, PrivMeta removes targeted EXIF, IPTC, XMP and comment structures. For DOCX files, it removes `docProps/` and anonymises author, account and revision-session identities throughout Word XML. Audio and video use hand-written format parsers for MP4/MOV/M4A, Matroska, MP3/AAC tags, FLAC and WAV. The code and exact [coverage limitations](https://github.com/tonixx/privmeta/blob/master/docs/PRIVACY_AND_FORMAT_COVERAGE.md) are readable on GitHub.
 
 **3. The telemetry boundary**
 

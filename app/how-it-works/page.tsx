@@ -158,7 +158,7 @@ export default function HowItWorks() {
           The exact removal targets, preservation behaviour, test evidence and known limitations are documented in the project&apos;s{" "}
           <a
             className="underline"
-            href="https://github.com/DScaife/privmeta/blob/master/docs/PRIVACY_AND_FORMAT_COVERAGE.md"
+            href="https://github.com/tonixx/privmeta/blob/master/docs/PRIVACY_AND_FORMAT_COVERAGE.md"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -241,7 +241,7 @@ export default function HowItWorks() {
               No. File bytes are read and cleaned in your browser and are not sent to a processing server. The site may still make ordinary
               requests for page assets and operational telemetry, but those requests do not include file contents or file names. The source
               code is viewable on{" "}
-              <a className="underline" href="https://github.com/DScaife/privmeta/tree/master" target="_blank" rel="noopener noreferrer">
+              <a className="underline" href="https://github.com/tonixx/privmeta" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
               .

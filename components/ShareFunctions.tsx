@@ -3,11 +3,9 @@
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "@/components/ui/input";
-import { Bookmark, Copy, Check, Coffee } from "lucide-react";
+import { Bookmark, Copy, Check } from "lucide-react";
 import Typography from "./Typography";
-import Link from "next/link";
 import { toast } from "sonner";
-import { SUPPORT_URL, suppressSupportPrompts } from "@/utils/supportPrompts";
 
 const ShareFunctions = () => {
   const SHARE_URL = "https://privmeta.com/";
@@ -116,23 +114,6 @@ const ShareFunctions = () => {
             <p className="hidden md:inline">LinkedIn</p>
           </Button>
         </div>
-      </div>
-
-      {/* BMC */}
-      <div className="flex flex-col sm:flex-row sm:items-center gap-(--space-md)">
-        <Typography variant="label" className="w-44 lg:w-(--share-width)">
-          Support this project
-        </Typography>
-        <Link href={SUPPORT_URL} target="_blank" rel="noopener noreferrer" onClick={() => suppressSupportPrompts()}>
-          <Button
-            size="lg"
-            className="type-fluid type-button bg-background hover:bg-muted/50 text-foreground border-foreground border-2 w-full"
-            aria-label="Support me on Buy Me a Coffee"
-          >
-            <Coffee className="size-5" />
-            Buy me a coffee
-          </Button>
-        </Link>
       </div>
 
       {/* Link */}
